@@ -1,0 +1,3 @@
+el usuario Aaron tiene un gasto 8 
+el usuario Jhon tiene un gasto 5 
+el usuario Ruben tiene un gasto 4 

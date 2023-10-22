@@ -1,0 +1,10 @@
+Aaron,8
+Jessi,10
+Ruben,5
+Carlos,7
+Jhon,9
+Manu,8
+Marcos,4
+Silvia,8
+Diego,6
+Miguel,4
