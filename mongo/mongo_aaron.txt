@@ -1,0 +1,27 @@
+{"nombre" : {"$regex": "^Juan$", "$options": "i"}} --> busqueda May y Min
+{"edad": {$gte:20}} --> mayor que // e es "=="
+{"edad": {$lt:31}} --> menor que // e es "=="
+{"_id" : ObjectId('654164c706f2cf39db13acb1')} --> busqueda por id 
+{"edad": {$gte:20,$lt:35}} // between
+
+[
+    {
+        "$project": {
+            "titulo": 1,
+          "géneros_antiguos": "$género",
+            "géneros": {
+                "$split": ["$género", ", "]
+            }
+        }
+    },
+    {
+        "$project": {
+            "titulo": 1,
+          "géneros_antiguos": 1,
+          "géneros": 1,
+            "count_genre": {
+                "$size": "$géneros"
+            }
+        }
+    }
+] # aggregation
